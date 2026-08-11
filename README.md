@@ -129,3 +129,28 @@ AVERAGEX(Initiatives, Initiatives[PostLaunchAdoptionPct] - Initiatives[PreLaunch
 // 7. Budget Variance %
 Budget Variance % = 
 DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budgeted_SAR]), 0)
+
+
+
+## 💡 Key Business Insights & Strategic Recommendations
+
+* **Accelerate Physical Branch Optimization**:
+  * **Insight**: Branch transaction volume declined steadily from 856 (Jan) to 562 (Jun), while Mobile App volume expanded by 204%[cite: 1].
+  * **Recommendation**: Reallocate physical branch Teller headcount toward digital onboarding assistance and high-value advisory services[cite: 1].
+
+* **Address Dashboard-to-Initiation Conversion Friction**:
+  * **Insight**: 17.5% of active user sessions terminate on the main dashboard without initiating a transaction[cite: 1].
+  * **Recommendation**: Implement 1-click quick transfer prompts and biometric shortcut triggers on the main mobile landing dashboard to convert passive viewers into active transactions[cite: 1].
+
+* **Permanent Operating Budget Reallocation**:
+  * **Insight**: Technology/Licensing costs exceeded budget by +10.6% due to high server throughput during mobile surge months, while Operations stayed -10.3% under budget[cite: 1].
+  * **Recommendation**: Permanently reallocate H2 operational cost savings into software infrastructure and cloud licensing budgets to support expanding mobile traffic[cite: 1].
+
+* **SAMA Regulatory Compliance Integration**:
+  * **Insight**: Regulatory reporting (SAMA) requires granular audit trails for transaction failure points[cite: 1].
+  * **Recommendation**: Expand `Fact_Transactions` in production to link directly to automated compliance dimension tables logging security consent and regulatory data retention windows[cite: 1].
+
+
+
+
+
