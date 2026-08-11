@@ -90,50 +90,6 @@ The data model reflects an enterprise banking analytics stack, utilizing a **mul
 
 ---
 
-## 🧮 Core DAX Measures Reference
-
-dax
-// 1. Total Transaction Count
-Total Transactions = COUNTROWS(Fact_Transactions)
-
-// 2. Total Transaction Value (SAR)
-Total Transaction Value = SUM(Fact_Transactions[Amount_SAR])
-
-// 3. Transaction Success Rate %
-Success Rate % = 
-DIVIDE(
-    CALCULATE(COUNTROWS(Fact_Transactions), Fact_Transactions[Status] = "Success"),
-    COUNTROWS(Fact_Transactions),
-    0
-)
-
-// 4. Month-over-Month Transaction Growth %
-MoM Transaction Growth % = 
-VAR LatestDate = MAX(Fact_Transactions[Date])
-VAR CurrentMonth = CALCULATE([Total Transactions], DATESINPERIOD(Fact_Transactions[Date], LatestDate, -1, MONTH))
-VAR PrevMonth = CALCULATE([Total Transactions], DATEADD(DATESINPERIOD(Fact_Transactions[Date], LatestDate, -1, MONTH), -1, MONTH))
-RETURN DIVIDE(CurrentMonth - PrevMonth, PrevMonth)
-
-// 5. Session Funnel Completion Rate %
-Completion Rate % = 
-DIVIDE(
-    CALCULATE(COUNTROWS(Fact_Sessions), Fact_Sessions[FunnelStageReached] = "Transaction Completed"),
-    COUNTROWS(Fact_Sessions),
-    0
-)
-
-// 6. Average Initiative Adoption Uplift %
-Avg Adoption Uplift = 
-AVERAGEX(Initiatives, Initiatives[PostLaunchAdoptionPct] - Initiatives[PreLaunchAdoptionPct])
-
-// 7. Budget Variance %
-Budget Variance % = 
-DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budgeted_SAR]), 0) 
-
-
-
-
-
 ## 💡 Key Business Insights & Strategic Recommendations
 
 * **Accelerate Physical Branch Optimization**:
