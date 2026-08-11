@@ -58,7 +58,7 @@ The data model reflects an enterprise banking analytics stack, utilizing a **mul
   * *Donut Chart*: Total channel volume share distribution[cite: 1].
 * **Key Executive Takeaway**: Mobile App transactions grew from 755 in Jan to 2,298 in June, officially surpassing physical branches in April 2026 to become the primary banking channel (33.4% overall share)[cite: 1].
 
-![Page 1 Executive Overview](https://raw.githubusercontent.com/Shaadink/Digital-Banking-Performance-Analytics-Platform-DBI-/main/Screenshot%202026-08-12%20025627.jpg)
+![Page 1 Executive Overview](https://raw.githubusercontent.com/Shaadink/Digital-Banking-Performance-Analytics-Platform-DBI-/main/Screenshot%202026-08-12%20025627.png)
 
 ---
 
