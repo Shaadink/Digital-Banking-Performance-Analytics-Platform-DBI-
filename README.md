@@ -2,8 +2,6 @@
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-00758F?style=for-the-badge&logo=powerbi&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
 An enterprise-grade, multi-page **Power BI Analytics Platform** built for a **Digital Banking & Innovation (DBI)** department. This project tracks **26,270 financial transactions** (27.09M SAR total volume), **70,781 user sessions**, **4 strategic feature rollouts**, and **3.96M SAR in departmental operating budget** across H1 2026 (Jan – Jun 2026).
@@ -40,41 +38,55 @@ The data model reflects an enterprise banking analytics stack, utilizing a **mul
 
 ---
 
-## 📊 Dashboard Architecture & Page Breakdown
+## 📊 Dashboard Architecture & Screenshots
 
 ### **Landing Page — Interactive Navigation Cover**
 * Executive landing screen featuring a Deloitte-inspired digital banking theme, quick platform scope highlights, and three interactive **Page Navigation Buttons** linking directly to core reporting layers.
 
+![Landing Page Cover](https://raw.githubusercontent.com/Shaadink/Digital-Banking-Performance-Analytics-Platform-DBI-/main/Screenshot%202026-08-12%20025608.png)
+
+---
+
 ### **Page 1 — 6 Month DBI Performance Report (Executive Overview)**
 * **KPI Strip**:
   * **Total Transactions**: `26,270`
-  * **Total Transaction Value**: `27.09M SAR` (27,088,465.61 SAR)
-  * **Transaction Success Rate**: `94.0%` (Target: 95.0%)
-  * **June MoM Growth Rate**: `+11.1%`
+  * **Total Transaction Value**: `27.09M SAR` (27,088,465.61 SAR)[cite: 1]
+  * **Transaction Success Rate**: `94.0%` (Target: 95.0%)[cite: 1]
+  * **June MoM Growth Rate**: `+11.1%`[cite: 1]
 * **Visuals**:
-  * *Multi-Line Chart*: 6-month transaction volume trend by channel (Mobile App, Internet Banking, ATM, Branch).
-  * *Donut Chart*: Total channel volume share distribution.
-* **Key Executive Takeaway**: Mobile App transactions grew from 755 in Jan to 2,298 in June, officially surpassing physical branches in April 2026 to become the primary banking channel (33.4% overall share).
+  * *Multi-Line Chart*: 6-month transaction volume trend by channel (Mobile App, Internet Banking, ATM, Branch)[cite: 1].
+  * *Donut Chart*: Total channel volume share distribution[cite: 1].
+* **Key Executive Takeaway**: Mobile App transactions grew from 755 in Jan to 2,298 in June, officially surpassing physical branches in April 2026 to become the primary banking channel (33.4% overall share)[cite: 1].
+
+![Page 1 Executive Overview](https://raw.githubusercontent.com/Shaadink/Digital-Banking-Performance-Analytics-Platform-DBI-/main/Screenshot%202026-08-12%20025627.jpg)
+
+---
 
 ### **Page 2 — Initiative Performance & User Behavior**
 * **KPI Strip & Controls**:
-  * **Average Initiative Adoption Uplift**: `+11.3%`
-  * **Funnel Completion Rate**: `21.4%` ($15,128\text{ completed} / 70,781\text{ sessions}$)
-  * **Interactive Filter**: Global Channel Slicer (`Mobile App` / `Internet Banking`).
+  * **Average Initiative Adoption Uplift**: `+11.3%`[cite: 1]
+  * **Funnel Completion Rate**: `21.4%` (15,128 completed / 70,781 sessions)[cite: 1]
+  * **Interactive Filter**: Global Channel Slicer (`Mobile App` / `Internet Banking`)[cite: 1].
 * **Visuals**:
-  * *Clustered Bar Chart*: Pre vs. Post Launch Adoption % across 4 product initiatives.
-  * *Column/Funnel Chart*: 5-Stage Session Funnel (`Login` $\rightarrow$ `OTP Verification` $\rightarrow$ `Dashboard View` $\rightarrow$ `Transaction Initiated` $\rightarrow$ `Transaction Completed`).
-* **Key Behavioral Takeaway**: AI Chatbot Launch delivered the highest individual adoption uplift (+12.6%). Primary user session friction occurs between **Dashboard View (20.07K)** and **Transaction Initiated (16.56K)**—a **17.5% intention drop-off**.
+  * *Clustered Bar Chart*: Pre vs. Post Launch Adoption % across 4 product initiatives[cite: 1].
+  * *Column/Funnel Chart*: 5-Stage Session Funnel (`Login` $\rightarrow$ `OTP Verification` $\rightarrow$ `Dashboard View` $\rightarrow$ `Transaction Initiated` $\rightarrow$ `Transaction Completed`)[cite: 1].
+* **Key Behavioral Takeaway**: AI Chatbot Launch delivered the highest individual adoption uplift (+12.6%)[cite: 1]. Primary user session friction occurs between **Dashboard View (20.07K)** and **Transaction Initiated (16.56K)**—a **17.5% intention drop-off**[cite: 1].
+
+![Page 2 Initiatives and User Behavior](https://raw.githubusercontent.com/Shaadink/Digital-Banking-Performance-Analytics-Platform-DBI-/main/Screenshot%202026-08-12%20025639.png)
+
+---
 
 ### **Page 3 — Channel Trend & Budget Snapshot**
 * **KPI Strip**:
-  * **Total Actual Spend (YTD)**: `3,964,690 SAR`
-  * **Total Budgeted Spend (YTD)**: `3,959,233 SAR`
-  * **Budget Variance**: `+0.1%` (+5,457 SAR overrun / On Track)
+  * **Total Actual Spend (YTD)**: `3,964,690 SAR`[cite: 1]
+  * **Total Budgeted Spend (YTD)**: `3,959,233 SAR`[cite: 1]
+  * **Budget Variance**: `+0.1%` (+5,457 SAR overrun / On Track)[cite: 1]
 * **Visuals**:
-  * *Stacked Area / Clustered Column Chart*: Monthly actual vs. budgeted spend progression.
-  * *Financial Breakdown Matrix*: Cost category ledger detailing spend across Marketing, Technology/Licensing, and Operations.
-* **Key Fiscal Takeaway**: Operational cost savings (-10.3% under budget) successfully neutralized software and cloud infrastructure overruns in Technology/Licensing (+10.6% over budget) caused by rapid mobile traffic scaling.
+  * *Stacked Area / Clustered Column Chart*: Monthly actual vs. budgeted spend progression[cite: 1].
+  * *Financial Breakdown Matrix*: Cost category ledger detailing spend across Marketing, Technology/Licensing, and Operations[cite: 1].
+* **Key Fiscal Takeaway**: Operational cost savings (-10.3% under budget) successfully neutralized software and cloud infrastructure overruns in Technology/Licensing (+10.6% over budget) caused by rapid mobile traffic scaling[cite: 1].
+
+![Page 3 Channel Trend and Budget Snapshot](https://raw.githubusercontent.com/Shaadink/Digital-Banking-Performance-Analytics-Platform-DBI-/main/Screenshot%202026-08-12%20025651.png)
 
 ---
 
