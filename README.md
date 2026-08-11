@@ -132,6 +132,8 @@ DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budg
 
 
 
+
+
 ## 💡 Key Business Insights & Strategic Recommendations
 
 * **Accelerate Physical Branch Optimization**:
