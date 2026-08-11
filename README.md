@@ -128,7 +128,7 @@ AVERAGEX(Initiatives, Initiatives[PostLaunchAdoptionPct] - Initiatives[PreLaunch
 
 // 7. Budget Variance %
 Budget Variance % = 
-DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budgeted_SAR]), 0)
+DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budgeted_SAR]), 0) '''
 
 
 
