@@ -92,7 +92,7 @@ The data model reflects an enterprise banking analytics stack, utilizing a **mul
 
 ## 🧮 Core DAX Measures Reference
 
-```dax
+dax
 // 1. Total Transaction Count
 Total Transactions = COUNTROWS(Fact_Transactions)
 
@@ -128,7 +128,7 @@ AVERAGEX(Initiatives, Initiatives[PostLaunchAdoptionPct] - Initiatives[PreLaunch
 
 // 7. Budget Variance %
 Budget Variance % = 
-DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budgeted_SAR]), 0) '''
+DIVIDE(SUM(Budget[ActualSpend_SAR]) - SUM(Budget[Budgeted_SAR]), SUM(Budget[Budgeted_SAR]), 0) 
 
 
 
